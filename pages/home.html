@@ -114,7 +114,90 @@
         .media-icons a:hover{
             transform: scale(1.3);
         }
+        main{
+            background-color: #fff;
+        }
+       .section-container{
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+       } 
+       .section-container h1{
+        font-size: 36px;
+        font-weight: 600;
+       }
+       .section-container p{
+        font-size: 14px;
+        color: #777;
+        font-weight: 300;
+        padding: 10px;
+        line-height: 22px;
+       }
+       .section-container{
+        width: 80%;
+        margin: auto;
+        padding-top: 100px;
+        text-align: center;
+    }
+       .row{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+       }
+       .course-column{
+        background-color: #fff3f3;
+        flex-basis: 31%;
+        padding: 20px 12px;
+        margin-bottom: 5%;
+        border-radius: 10px;
+        transition: all 0.5s;
         
+       }
+       .course-column:hover{
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+       }
+      .campus-column{
+        flex-basis: 32%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+      }
+      .campus-column img{
+        width: 100%;
+        height: 100%;
+      }
+      .layer{
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease;
+        
+      } 
+      .layer:hover{
+        background-color: rgba(255,165,0,0.7);
+      }
+      .layer h3{
+        position: absolute;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+        width: 100%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        bottom: 0;
+        left: 50%;
+        opacity: 0;
+        transition: all 0.5s;
+      }
+      .layer:hover h3{
+        bottom: 49%;
+        opacity: 1;
+      }
 /* this is a RWA */
 @media(max-width:700px){
     .Hero-content>h1{
@@ -142,6 +225,9 @@
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
+    }
+    .row{
+        flex-direction: column;
     }
 }
     </style>
@@ -178,26 +264,64 @@
     <article id="courses" class="section-container">
         <h1>Courses We Offer</h1>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate magni numquam saepe maxime aut fugit voluptate ea vel est culpa.
+            Dear potential students,
+
+            We are thrilled to introduce you to our diverse range of courses designed to empower and inspire individuals like you. At our institution, we believe in the transformative power of education, and our courses are carefully crafted to cater to a wide array of interests and career aspirations. Whether you're a high school graduate looking to kickstart your academic journey or a working professional seeking to upskill, we have something for everyone.
         </p>
         <div class="row">
             <div class="course-column">
                 <h3>Intermediate </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at ut libero unde, vitae et nesciunt cumque ab dicta explicabo maiores voluptas doloribus alias omnis veniam iusto? Delectus, officia similique.</p>
+                <p>Our intermediate courses are designed to build on your existing knowledge and skills. Whether you're looking to advance in your career or pursue personal growth, these courses offer the perfect balance of challenge and support. With hands-on training and expert guidance, you'll gain practical experience to excel in your chosen field. Elevate your expertise and open doors to new opportunities with our intermediate courses. Enroll today and take your learning journey to the next level.</p>
             </div>
             <div class="course-column">
                 <h3>Degree</h3>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit in officiis iure porro earum nobis atque natus possimus, accusantium quaerat repellendus doloribus eos dolorum nemo et odio exercitationem sapiente sunt?
+                    Our degree courses provide comprehensive education and in-depth knowledge in various disciplines. Designed to prepare you for a successful career, these programs offer a solid foundation for personal and professional growth. With experienced faculty and modern facilities, you'll receive top-notch education and practical training. Earn a recognized degree and unlock endless possibilities for your future. Enroll now to embark on a transformative academic journey.
                 </p>
             </div>
             <div class="course-column">
                 <h3>Post Graduate</h3>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates hic delectus illo officiis rem, repellat magnam iusto autem non accusantium facilis accusamus sed, temporibus nulla. Officia ut dolorum minus? Fuga?
+                    Our postgraduate courses are tailored for advanced learning and specialization in diverse fields. With cutting-edge curriculum and renowned faculty, you'll be immersed in an intellectually stimulating environment. Gain expertise and refine your skills to become a leader in your chosen industry. Our postgraduate programs offer a stepping stone to career advancement and research opportunities. Take the next step in your academic journey and unlock your full potential with our postgraduate courses.
                 </p>
             </div>
         </div>
+    </article>
+    <article id="Campuses" class="section-container">
+        <h1>Explore Various Campuses</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, obcaecati cumque laborum libero quod dolorem eligendi dolorum exercitationem vero iste?
+
+        </p>
+        <div class="row">
+
+            <div class="campus-column">
+                <img src="../assets/images/campus/243780-purdue-university-main-campus.webp" alt="">
+                <div class="layer">
+                    <h3> Downtown Campus</h3>
+                </div>
+            </div>
+            <div class="campus-column">
+                <img src="../assets/images/campus/royal-holloway-campus.jpg" alt="">
+                <div class="layer">
+                <h3>Elite Campus</h3>
+                </div>
+            </div>
+            <div class="campus-column">
+                <img src="../assets/images/campus/University-of-Agder-Campus-Kristiansand-header.webp" alt="">
+                <div class="layer">
+                <h3>Oasis Campus</h3></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="campus-column">
+                <img src="../assets/images/campus/01-University-of-Ghana-DSC02643.jpg" alt="">
+                <div class="layer">
+                <h3>Macdonald Campus</h3></div>
+            </div>
+        </div>
+    </article>
+    <article id="facilities" class="section-container">
+
     </article>
    </main>
    <footer></footer>
